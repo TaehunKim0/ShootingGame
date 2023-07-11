@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Movespeed: 2
-  ExplodeFX: {fileID: 0}
+  ExplodeFX: {fileID: 6991579891160826648, guid: c82ae53dbaf48e74a81a3f7fe482e249, type: 3}
   LifeTime: 3
 --- !u!1 &2364916493143035702
 GameObject:

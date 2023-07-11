@@ -26,6 +26,6 @@ public class ProjectileMovement : MonoBehaviour
 
     private void OnDestroy()
     {
-        //Instantiate(ExplodeFX, transform.position, Quaternion.identity);
+       Instantiate(ExplodeFX, transform.position, Quaternion.identity);
     }
 }

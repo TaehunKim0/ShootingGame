@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public float Health = 3f;
     public float AttackDamage = 1f;
+    public Explode ExplodeFX;
 
     void Start()
     {
@@ -29,5 +30,10 @@ public class Enemy : MonoBehaviour
 
             Destroy(collision.gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        Instantiate(ExplodeFX, transform.position, Quaternion.identity);
     }
 }
