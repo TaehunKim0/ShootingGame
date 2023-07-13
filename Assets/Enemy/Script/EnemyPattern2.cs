@@ -16,7 +16,7 @@ public class EnemyPattern2 : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(Attack());
+        StartCoroutine(Attack()); //코루틴
     }
 
     void Update()
@@ -36,7 +36,7 @@ public class EnemyPattern2 : MonoBehaviour
 
             Vector3 playerPos = player.GetComponent<Transform>().position;
             Vector3 direction = playerPos - transform.position;
-            direction.Normalize();
+            direction.Normalize(); // 정규화 -> 검색
 
             var projectile = Instantiate(Projectile, transform.position, Quaternion.identity);
             projectile.GetComponent<EnemyProjectileMovement>().SetDirection(direction);

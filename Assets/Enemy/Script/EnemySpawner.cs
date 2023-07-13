@@ -37,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        int spawnCount = Random.Range(1, EnemySpawnTransform.Length);
+        int spawnCount = Random.Range(1, MaxSpawnEnemyCount);
         List<int> availablePositions = new List<int>(EnemySpawnTransform.Length);
 
         for (int i = 0; i < EnemySpawnTransform.Length; i++)
